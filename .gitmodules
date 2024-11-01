@@ -1,0 +1,6 @@
+[submodule "user-management-APIGateway"]
+	path = user-management-APIGateway
+	url = https://github.com/shivarajshanthaiah/user-management-APIGateway
+[submodule "user-management-users"]
+	path = user-management-users
+	url = https://github.com/shivarajshanthaiah/user-management-users
