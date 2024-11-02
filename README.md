@@ -45,3 +45,23 @@ Pull PostgreSQL and Redis images, set up the database, and connect both microser
 
 #### Testing Locally with Docker
 Ensure the application works as expected in Docker before deploying to Kubernetes.
+
+## Kubernetes Deployment
+1. Create a Secret File (for database credentials and other sensitive information).
+2. Clone Kubernetes Deployment Files (deployment.yaml and service.yaml).
+3. Deploy the files to your Kubernetes cluster:
+   ```bash
+   kubectl apply -f deployment.yaml
+   kubectl apply -f service.yaml
+
+## Testing the Application
+1. Get Service Details:
+   ```bash
+   kubectl get svc
+2. Access Services via NodePort:
+3. ```bash
+   http://<NodeIP>:<NodePort>/method
+
+## Conclusion
+This deployment demonstrates a basic Golang microservices setup with Docker and Kubernetes, using gRPC for communication, 
+containerized deployments, and NodePort for external access testing.
