@@ -3,7 +3,7 @@ This project consists of two Golang microservices: one for managing user data an
 The services communicate over gRPC, utilize PostgreSQL and Redis for persistent and cached storage, and are containerized and deployed on Kubernetes.
 
 ## Prerequisites
-1. Go (Golang) - Install GO
+1. Go (Golang) - [Install GO](https://go.dev/doc/install)
 2. PostgreSQL - Install PostgreSQL
 3. Redis - Install Redis
 4. Docker - Install Docker.
