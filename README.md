@@ -10,12 +10,6 @@ The services communicate over gRPC, utilize PostgreSQL and Redis for persistent 
 5. Kubernetes - Use Minikube or another provider.
 6. kubectl - Install kubectl.
 
-## Setup and Installation
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/user-management.git
-   
 ## Golang Application
 ### Microservice 1 - User Management
 **Provides the following functionalities:**
@@ -32,6 +26,12 @@ The services communicate over gRPC, utilize PostgreSQL and Redis for persistent 
 
 ### gRPC Communication
 The two microservices communicate through gRPC for efficient data handling.
+
+# Setup and Installation
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/user-management.git
 
 ## Docker Containerization
 You can either:
