@@ -47,6 +47,8 @@ Pull PostgreSQL and Redis images, set up the database, and connect both microser
 Ensure the application works as expected in Docker before deploying to Kubernetes.
 
 ## Kubernetes Deployment
+For Kubernetes setup, you can refer to the Kubernetes documentation.
+### Deployment Process
 1. Create a Secret File (for database credentials and other sensitive information).
 2. Clone Kubernetes Deployment Files (deployment.yaml and service.yaml).
 3. Deploy the files to your Kubernetes cluster:
