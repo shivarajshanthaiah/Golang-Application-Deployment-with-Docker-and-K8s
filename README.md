@@ -61,7 +61,7 @@ For Kubernetes setup, you can refer to the Kubernetes documentation.
    ```bash
    kubectl get svc
 2. Access Services via NodePort:
-3. ```bash
+   ```bash
    http://<NodeIP>:<NodePort>/method
 
 ## Conclusion
