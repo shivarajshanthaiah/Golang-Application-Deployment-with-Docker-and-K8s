@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: user-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: user-service
+  template:
+    metadata:
+      labels:
+        app: user-service
+    spec:
+      containers:
+        - name: user-service
+          image: shivaraj3652/user-management-user:v1
+          env:
+            - name: DBHOST
+              valueFrom:
+                secretKeyRef:
+                  name: secret
+                  key: DBHOST
+            - name: DBUSER
+              valueFrom:
+                secretKeyRef:
+                  name: secret
+                  key: DBUSER
+            - name: DBPASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: secret
+                  key: DBPASSWORD
+            - name: DBNAME
+              valueFrom:
+                secretKeyRef:
+                  name: secret
+                  key: DBNAME
+            - name: REDISHOST
+              valueFrom:
+                secretKeyRef:
+                  name: secret
+                  key: REDISHOST
+            - name: GRPCUSERPORT
+              valueFrom:
+                secretKeyRef:
+                  name: secret
+                  key: GRPCUSERPORT
+          ports:
+            - containerPort: 7070
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: user-service
+spec:
+  selector:
+    app: user-service
+  ports:
+    - protocol: TCP
+      port: 7070
+      targetPort: 7070
