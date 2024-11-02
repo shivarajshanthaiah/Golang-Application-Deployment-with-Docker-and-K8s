@@ -35,7 +35,7 @@ The two microservices communicate through gRPC for efficient data handling.
 
 ## Docker Containerization
 You can either:
-1. Clone the repository and Dockerize your application (refer to the Docker 101 tutorial if you’re new to Docker), or
+1. Clone the repository and Dockerize your application (refer to the [Docker 101 tutorial](https://www.docker.com/101-tutorial/) if you’re new to Docker), or
 2. Pull Docker images directly from Docker Hub:
    ```bash
    docker pull shivaraj3652/user-management-apiservice:v1
@@ -47,7 +47,7 @@ Pull PostgreSQL and Redis images, set up the database, and connect both microser
 Ensure the application works as expected in Docker before deploying to Kubernetes.
 
 ## Kubernetes Deployment
-For Kubernetes setup, you can refer to the Kubernetes documentation.
+For Kubernetes setup, you can refer to the [Kubernetes documentation](https://kubernetes.io/docs/tutorials/).
 ### Deployment Process
 1. Create a Secret File (for database credentials and other sensitive information).
 2. Clone Kubernetes Deployment Files (deployment.yaml and service.yaml).
