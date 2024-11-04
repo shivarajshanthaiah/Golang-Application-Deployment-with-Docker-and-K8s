@@ -28,10 +28,15 @@ The services communicate over gRPC, utilize PostgreSQL and Redis for persistent 
 The two microservices communicate through gRPC for efficient data handling.
 
 # Setup and Installation
-1. Clone the repository:
+1. Clone the repositories:
 
    ```bash
-   git clone https://github.com/your-username/user-management.git
+   https://github.com/shivarajshanthaiah/user-management-APIGateway/tree/5ee057f1a9429b3c6e558192b78f83c9398272dc
+   https://github.com/shivarajshanthaiah/user-management-users/tree/24863428e39a2631e2edda12a61f4a018780ec07
+2. Make sure to install gRPC(Protobuf) and database(PostgreSQL and Redis)
+3. Set environmen variables
+4. Make sure your services are up and running
+5. Test API endpoints(refer [API documentation](https://documenter.getpostman.com/view/32823353/2sAY4ydzzB)
 
 ## Docker Containerization
 You can either:
