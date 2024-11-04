@@ -36,7 +36,7 @@ The two microservices communicate through gRPC for efficient data handling.
 2. Make sure to install gRPC(Protobuf) and database(PostgreSQL and Redis)
 3. Set environmen variables
 4. Make sure your services are up and running
-5. Test API endpoints(refer [API documentation](https://documenter.getpostman.com/view/32823353/2sAY4ydzzB)
+5. Test API endpoints (refer [API documentation](https://documenter.getpostman.com/view/32823353/2sAY4ydzzB))
 
 ## Docker Containerization
 You can either:
