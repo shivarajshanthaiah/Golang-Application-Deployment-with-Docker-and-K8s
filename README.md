@@ -31,8 +31,8 @@ The two microservices communicate through gRPC for efficient data handling.
 1. Clone the repositories:
 
    ```bash
-   https://github.com/shivarajshanthaiah/user-management-APIGateway/tree/5ee057f1a9429b3c6e558192b78f83c9398272dc
-   https://github.com/shivarajshanthaiah/user-management-users/tree/24863428e39a2631e2edda12a61f4a018780ec07
+   https://github.com/shivarajshanthaiah/user-management-APIGateway
+   https://github.com/shivarajshanthaiah/user-management-users
 2. Make sure to install gRPC(Protobuf) and database(PostgreSQL and Redis)
 3. Set environmen variables
 4. Make sure your services are up and running
