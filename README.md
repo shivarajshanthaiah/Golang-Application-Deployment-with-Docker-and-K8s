@@ -28,7 +28,7 @@ The services communicate over gRPC, utilize PostgreSQL and Redis for persistent 
 The two microservices communicate through gRPC for efficient data handling.
 
 # Setup and Installation
-1. Clone the repositories:
+1. Clone the repositories(to run locally wihtout containers):
 
    ```bash
    https://github.com/shivarajshanthaiah/user-management-APIGateway
